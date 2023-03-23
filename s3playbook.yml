@@ -1,0 +1,7 @@
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Create S3 bucket
+      s3_bucket:
+        name: my-bucket-09111996
+        state: present
