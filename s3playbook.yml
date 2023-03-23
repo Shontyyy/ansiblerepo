@@ -1,7 +1,11 @@
 - hosts: localhost
   connection: local
   gather_facts: False
+  become: yes
+  become_method: sudo
   vars:
+    ansible_user: ubuntu
+    ansible_become_user: root
     ansible_python_interpreter:  /usr/local/lib/python3.10/dist-packages
   tasks:
     - name: Create S3 bucket
