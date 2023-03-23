@@ -1,7 +1,7 @@
 - hosts: localhost
   connection: local
   vars:
-    ansible_python_interpreter: /usr/bin/python3
+    ansible_python_interpreter:  /usr/local/lib/python3.10/dist-packages
   tasks:
     - name: Create S3 bucket
       s3_bucket:
