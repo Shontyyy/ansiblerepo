@@ -1,5 +1,6 @@
 - hosts: localhost
   connection: local
+  gather_facts: False
   vars:
     ansible_python_interpreter:  /usr/local/lib/python3.10/dist-packages
   tasks:
@@ -7,3 +8,4 @@
       s3_bucket:
         name: my-bucket-09111996
         state: present
+         region: ap-south-1
