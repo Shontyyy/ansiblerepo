@@ -8,4 +8,4 @@
       s3_bucket:
         name: my-bucket-09111996
         state: present
-         region: ap-south-1
+        region: ap-south-1
